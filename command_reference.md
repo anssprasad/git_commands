@@ -26,3 +26,17 @@ git config --list
 * /TODO # only ignore the root TODO file, not subdir/TODO
 * build/ # ignore all files in the build/ directory
 doc/*.txt # ignore doc/notes.txt, but not doc/server/arch.txt
+# To see what you’ve changed but not yet staged, type git diff with no other arguments
+git diff filename
+# If you want to see what you’ve staged that will go into your next commit, you can use git diff --staged
+git diff --staged filename
+# Remember a file that is staged and them modified can be listed in bothe staged and modified sections
+## to see what you have already staged but not what you have modified run
+git diff --cached filename
+# To commit your changes 
+git commit
+## To skip the staging step when there are a lot of modified files you can use the -a option with git commit
+git commit -a
+## To add a message to the commit use -m in the command line
+git commit -a -m "My commit"
+
