@@ -41,4 +41,30 @@ git commit
 git commit -a
 ##### To add a message to the commit use -m in the command line
 git commit -a -m "My commit"
+#### To remove files
+* git rm filename
+* git rm --cached README
+* git rm log/\*.log
+* git rm \*~
+
+#### Renaming a file in git
+* git mv README README.md
+
+#### Git log
+* git log
+* git log -p -2
+* git log --stat
+* git log --pretty=oneline
+* git log --pretty=format:"%h %s" --graph
+* git log --since=2.weeks
+* 
+
+Another really helpful filter is the -S option that takes a string and only shows the commits that introduced a
+change to the code that added or removed that string. For instance, if you wanted to find the last commit that added or
+removed a reference to a specific function, you could call:
+$ git log --Sfunction_name
+
+
+
+
 
